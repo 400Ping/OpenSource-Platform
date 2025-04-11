@@ -2,7 +2,7 @@ name: Run Crawlers
 
 on:
   schedule:
-    - cron: "0 0 * * *"      # 每天 UTC 00:00 觸發 (若需台灣時間，請自行轉換)
+    - cron: "0 0 * * *"      # 每天 08:00 台灣時間 (UTC+8)
   workflow_dispatch:          # 支援手動觸發
 
 jobs:
@@ -30,3 +30,11 @@ jobs:
         env:
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
         run: python api.py
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add *.csv *.json
+          git commit -m "Automated daily update" || echo "No changes to commit"
+          git push
