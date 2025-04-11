@@ -1,0 +1,79 @@
+{
+    "response": {
+        "status": "ok",
+        "userTier": "developer",
+        "total": 242623,
+        "startIndex": 1,
+        "pageSize": 5,
+        "currentPage": 1,
+        "pages": 48525,
+        "orderBy": "newest",
+        "results": [
+            {
+                "id": "lifeandstyle/2025/apr/11/lego-drops-diversity-terms-from-its-annual-sustainability-report",
+                "type": "article",
+                "sectionId": "world",
+                "sectionName": "World news",
+                "webPublicationDate": "2025-04-11T15:27:30Z",
+                "webTitle": "Lego drops diversity terms from its annual sustainability report",
+                "webUrl": "https://www.theguardian.com/lifeandstyle/2025/apr/11/lego-drops-diversity-terms-from-its-annual-sustainability-report",
+                "apiUrl": "https://content.guardianapis.com/lifeandstyle/2025/apr/11/lego-drops-diversity-terms-from-its-annual-sustainability-report",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+            },
+            {
+                "id": "world/2025/apr/11/ukraine-allies-promise-21bn-military-support-kyiv",
+                "type": "article",
+                "sectionId": "world",
+                "sectionName": "World news",
+                "webPublicationDate": "2025-04-11T14:47:08Z",
+                "webTitle": "Ukraine allies promise €21bn in military support for Kyiv",
+                "webUrl": "https://www.theguardian.com/world/2025/apr/11/ukraine-allies-promise-21bn-military-support-kyiv",
+                "apiUrl": "https://content.guardianapis.com/world/2025/apr/11/ukraine-allies-promise-21bn-military-support-kyiv",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+            },
+            {
+                "id": "world/live/2025/apr/11/europe-ukraine-summit-brussels-pete-hegseth-trump-tariffs-live-updates-news",
+                "type": "liveblog",
+                "sectionId": "world",
+                "sectionName": "World news",
+                "webPublicationDate": "2025-04-11T14:17:11Z",
+                "webTitle": "Russian media report Trump’s envoy Steve Witkoff will meet Putin for Ukraine talks – as it happened",
+                "webUrl": "https://www.theguardian.com/world/live/2025/apr/11/europe-ukraine-summit-brussels-pete-hegseth-trump-tariffs-live-updates-news",
+                "apiUrl": "https://content.guardianapis.com/world/live/2025/apr/11/europe-ukraine-summit-brussels-pete-hegseth-trump-tariffs-live-updates-news",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+            },
+            {
+                "id": "world/2025/apr/11/hiroshi-suzuki-japanese-ambassador-love-uk-social-media-star",
+                "type": "article",
+                "sectionId": "world",
+                "sectionName": "World news",
+                "webPublicationDate": "2025-04-11T12:57:19Z",
+                "webTitle": "Feeling’s mutual: Japan ambassador’s love of UK makes him social media star",
+                "webUrl": "https://www.theguardian.com/world/2025/apr/11/hiroshi-suzuki-japanese-ambassador-love-uk-social-media-star",
+                "apiUrl": "https://content.guardianapis.com/world/2025/apr/11/hiroshi-suzuki-japanese-ambassador-love-uk-social-media-star",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+            },
+            {
+                "id": "world/2025/apr/11/coup-leader-brice-nguema-favourite-in-presidential-race-as-gabon-goes-to-the-polls",
+                "type": "article",
+                "sectionId": "world",
+                "sectionName": "World news",
+                "webPublicationDate": "2025-04-11T12:11:58Z",
+                "webTitle": "Coup leader favourite in presidential race as Gabon goes to the polls",
+                "webUrl": "https://www.theguardian.com/world/2025/apr/11/coup-leader-brice-nguema-favourite-in-presidential-race-as-gabon-goes-to-the-polls",
+                "apiUrl": "https://content.guardianapis.com/world/2025/apr/11/coup-leader-brice-nguema-favourite-in-presidential-race-as-gabon-goes-to-the-polls",
+                "isHosted": false,
+                "pillarId": "pillar/news",
+                "pillarName": "News"
+            }
+        ]
+    }
+}
