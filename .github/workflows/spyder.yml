@@ -1,0 +1,32 @@
+name: Run Crawlers
+
+on:
+  schedule:
+    - cron: "0 0 * * *"      # 每天 UTC 00:00 觸發 (若需台灣時間，請自行轉換)
+  workflow_dispatch:          # 支援手動觸發
+
+jobs:
+  run-spyders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run static.py
+        run: python static.py
+
+      - name: Run api.py
+        env:
+          GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+        run: python api.py
