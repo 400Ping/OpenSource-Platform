@@ -22,13 +22,6 @@ def fetch_guardian_news(api_key):
         print(f"Error: {response.status_code} - 無法取得資料")
         return None
 
-def save_to_json(data, filename="api.json"):
-    """
-    將完整回傳資料儲存成格式化過的 JSON 檔案
-    """
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-
 def save_to_csv(results, filename="api.csv"):
     """
     將 API 回傳結果中 "response" -> "results" 部分所包含的每篇新聞資料，
@@ -68,9 +61,6 @@ if __name__ == "__main__":
     if data:
         # 取得 "response" 底下的 "results" 部分資料
         results = data.get("response", {}).get("results", [])
-        
-        # 儲存完整回傳的 JSON 資料
-        save_to_json(data, "api.json")
         
         # 儲存重點欄位為 CSV 檔案
         save_to_csv(results, "api.csv")
