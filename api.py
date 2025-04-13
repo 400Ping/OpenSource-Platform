@@ -12,7 +12,7 @@ def fetch_guardian_news(api_key):
     params = {
         "api-key": api_key,
         "section": "world",     # 例如抓取世界新聞分類，可修改成其他分類
-        "page-size": 5          # 限制一次抓取的篇數，根據需求調整（免費版可能有篇數限制）
+        "page-size": 20          # 限制一次抓取的篇數，根據需求調整（免費版可能有篇數限制）
     }
     
     response = requests.get(url, params=params)
